@@ -39,11 +39,7 @@ public class BishopBlack implements Figure {
 
     public boolean isDiagonal(Cell source, Cell dest) {
         /* TODO check diagonal */
-          int size =  Math.abs(source.getX() - dest.getX());
-          if (Math.abs(source.getX() - dest.getX())==size&&Math.abs(source.getY() - dest.getY())==size){
-              return true;
-          }
-        return false;
+          return Math.abs(source.getX() - dest.getX()) == Math.abs(source.getY() - dest.getY());
     }
 
     @Override
